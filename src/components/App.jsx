@@ -8,6 +8,11 @@ import Error404 from './Error404'
 function App(){
   return (
     <div>
+      <style jsx global>{`
+        body{
+          font-family: sans-serif;
+        }
+      `}</style>
       <Header/>
       <Switch>
         <Route exact path='/' component={Body} />

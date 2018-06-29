@@ -1,16 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-
 function Beer(props){
   return (
     <div>
-      <h3>Name: {props.name}</h3>
-      <h3>Brewer: {props.brewer}</h3>
-      <p>Description: {props.description}</p>
-      <p>Abv: {props.abv}</p>
-      <p>Price: {props.price}</p>
-      <p>Remaining: {props.remaining}</p>
+      <style jsx>{`
+        div {
+          background-image: url('https://www.les3brasseurs.ca/sites/default/files/cask/les3brasseurs-glass.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 500%;
+        }
+      `}</style>
+      <h5>Name: {props.name}</h5>
+      <h5>Brewer: {props.brewer}</h5>
+      <h5>Description: {props.description}</h5>
+      <h5>Abv: {props.abv}</h5>
+      <h5>Price: {props.price}</h5>
+      <h5>Remaining: {props.remaining}</h5>
       <hr/>
     </div>
   )
