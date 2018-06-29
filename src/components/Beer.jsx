@@ -1,14 +1,16 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 
 function Beer(){
   return (
   <div>
-    <h3>name: Ruby Zozzle</h3>
-    <h3>brewer: hi-wheel</h3>
-    <p>description: sparkling wine</p>
-    <p>abv: 6.8 %</p>
-    <p>price: 7</p>
-    <p>remaining: 20</p>
+    <h3>{props.name}</h3>
+    <h3>{props.brewer}</h3>
+    <p>{props.description}</p>
+    <p>{props.abv}</p>
+    <p>{props.price}</p>
+    <p>{props.remaining}</p>
     <hr/>
   </div>
   );
