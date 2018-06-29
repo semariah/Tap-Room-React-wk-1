@@ -1,7 +1,10 @@
 import React from "react";
+import Beer from "./Beer";
 
 function BeerList(){
-  return ();
+  return (
+  <Beer/>
+  );
 }
 
 export default BeerList;
