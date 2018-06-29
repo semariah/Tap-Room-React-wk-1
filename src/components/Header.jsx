@@ -1,7 +1,9 @@
 import React from "react";
 
 function Header(){
-  return ();
+  return (
+  <h1>Beer List in PDX</h1>
+  );
 }
 
 export default Header;

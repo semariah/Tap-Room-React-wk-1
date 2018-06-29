@@ -1,9 +1,11 @@
 import React from "react";
+import Header from "./Header";
+
 
 function App(){
   return (
     <div>
-      <h1>Beer Haus</h1>
+      <h1>Beer List</h1>
       <h3>name: Ruby Zozzle</h3>
       <h3>brewer: hi-wheel</h3>
       <p>description: sparkling wine</p>
