@@ -7,7 +7,7 @@ function BeerList(){
   name="Ruby Zozzle"
   brewer="hi"
   description="sparkling wine"
-  abv="6.8 %""
+  abv="6.8 %"
   price="7"
   remaining="20"/>
   );

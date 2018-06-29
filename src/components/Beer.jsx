@@ -5,24 +5,24 @@ import PropTypes from "prop-types";
 function Beer(props){
   return (
   <div>
-    <h3>{props.name}</h3>
-    <h3>{props.brewer}</h3>
-    <p>{props.description}</p>
-    <p>{props.abv}</p>
-    <p>{props.price}</p>
-    <p>{props.remaining}</p>
+    <h3>Name: {props.name}</h3>
+    <h3>Brewer: {props.brewer}</h3>
+    <p>Description: {props.description}</p>
+    <p>Abv: {props.abv}</p>
+    <p>Price: {props.price}</p>
+    <p>Remaining: {props.remaining}</p>
     <hr/>
   </div>
   );
 }
 
 Beer.propTypes = {
-  name: PropTypes.string,
-  brewer: PropTypes.string,
-  description: PropTypes.string,
-  abv: PropTypes.string,
-  price: PropTypes.string,
-  remaining: PropTypes.string
+  name: PropTypes.string.isRequired,
+  brewer: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  abv: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  remaining: PropTypes.string.isRequired
 
 
 };
