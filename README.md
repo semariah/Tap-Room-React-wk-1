@@ -1,5 +1,7 @@
 # _Code review of wk1 React_
-####_Tap Room_
+
+_Tap Room_
+
 #### Semhar Kidane, June 29, 2018
 ---
 ### Description
