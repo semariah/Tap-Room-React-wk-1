@@ -1,13 +1,13 @@
-import React from "react";
-import BeerList from "./BeerList";
+import React from 'react'
+import BeerList from './BeerList'
 
 
 function Body(){
   return (
-  <div>
-    <BeerList/>
-  </div>
-  );
+    <div>
+      <BeerList/>
+    </div>
+  )
 }
 
-export default Body;
+export default Body

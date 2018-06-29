@@ -1,6 +1,6 @@
-import React from "react";
-import Body from "./Body";
-import Header from "./Header";
+import React from 'react'
+import Body from './Body'
+import Header from './Header'
 
 
 function App(){
@@ -9,7 +9,7 @@ function App(){
       <Header/>
       <Body/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
