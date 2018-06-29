@@ -14,7 +14,7 @@ function Header(){
       <div className="title">
         <h1>Beer List in PDX</h1>
       </div>
-      <Link to="/">Home</Link> | <Link to="/newbeer">Add new Beer</Link>
+      <Link to="/">Home</Link> | <Link to="/newbeer">Add new Beer</Link> | 
     </div>
   )
 }
