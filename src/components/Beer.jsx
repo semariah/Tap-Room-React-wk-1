@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 
-function Beer(){
+function Beer(props){
   return (
   <div>
     <h3>{props.name}</h3>
@@ -15,5 +15,16 @@ function Beer(){
   </div>
   );
 }
+
+Beer.propTypes = {
+  name: PropTypes.string,
+  brewer: PropTypes.string,
+  description: PropTypes.string,
+  abv: PropTypes.string,
+  price: PropTypes.string,
+  remaining: PropTypes.string
+
+
+};
 
 export default Beer;
