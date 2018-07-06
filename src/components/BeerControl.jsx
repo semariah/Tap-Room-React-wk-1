@@ -6,7 +6,7 @@ class BeerControl extends React.Component {
     super(props)
     this.state = {
       formVisibleOnPage: false
-    };
+    }
   }
   
   render(){
@@ -14,8 +14,8 @@ class BeerControl extends React.Component {
       <div>
         <p>This is the BeerControl component!</p>
       </div>
-    );
+    )
   }
 }
 
-export default BeerControl;
+export default BeerControl
