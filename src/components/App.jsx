@@ -4,6 +4,7 @@ import Header from './Header'
 import { Switch, Route } from 'react-router-dom'
 import Error404 from './Error404'
 import BeerControl from './BeerControl'
+import Moment from 'moment'
 
 class App extends React.Component {
   constructor(props){
@@ -19,6 +20,28 @@ class App extends React.Component {
     newMasterBeerList.push(newBeer)
     this.setState({masterBeerList: newMasterBeerList})
   }
+
+  componentWillUnmount(){
+    clearInterval(this.waitTimeUpdateTimer);
+  }
+
+  componentDidMount() {
+    this.waitTimeUpdateTimer = setInterval(() =>
+      this.updateBeerElapsedWaitTime(),
+      5000
+    );
+  }
+
+  updateBeerElapsedWaitTime() {
+    console.log("check");
+    let newMasterBeerList = this.state.masterBeerList.slice();
+    newMasterBeerList.forEach((beer) =>
+      beer.formattedWaitTime = (beer.timeOpen).fromNow(true)
+    );
+    this.setState({masterBeerList: newMasterBeerList})
+  }
+
+
 
   render(){
     return(
