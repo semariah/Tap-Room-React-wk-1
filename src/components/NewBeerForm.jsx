@@ -1,6 +1,11 @@
 import React from 'react'
 
 function NewBeerForm(){
+
+  function handleNewBeerFormSubmission(event){
+    event.preventDefault();
+  }
+  
   return (
     <div>
       <style jsx>{`
@@ -13,7 +18,7 @@ function NewBeerForm(){
         paddingBottom: '100px',
       }
     `}</style>
-      <form>
+      <form onSubmit={handleNewBeerFormSubmission}>
         <input
           type='text'
           id='name'
