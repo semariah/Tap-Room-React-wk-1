@@ -12,6 +12,10 @@ _Tap Room_
 * In terminal, run `$ npm install` in project folder home directory
 * In terminal, run `$ npm run start` to view in browser
 
+### Component Tree Diagram
+
+![image](https://user-images.githubusercontent.com/32581781/42402634-ea2660ca-8130-11e8-91b8-e5a5c0e99e25.png)
+
 ## #Known Bugs
 
 _No Known Bugs._
