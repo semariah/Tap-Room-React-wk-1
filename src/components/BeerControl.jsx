@@ -1,5 +1,6 @@
 import React from 'react'
 import ConfirmationQuestions from './ConfirmationQuestions'
+import NewBeerForm from './NewBeerForm'
 
 
 class BeerControl extends React.Component {
@@ -18,8 +19,16 @@ class BeerControl extends React.Component {
   // }
 
   render(){
+    let currentVisibleContent = null;
+    if(this.state.formVisibleOnPage){
+      currentVisibleContent = <NewBeerForm />;
+    } else {
+      currentVisibleContent = <ConfirmationQuestions />
+    }
     return (
-      <ConfirmationQuestions />
+      <div>
+        {currentVisibleContent}
+      </div>
     )
   }
 }
