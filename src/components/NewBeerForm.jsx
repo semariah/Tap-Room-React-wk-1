@@ -1,9 +1,21 @@
 import React from 'react'
 
 function NewBeerForm(){
+  let _name = null
+  let _brewer = null
+  let _description = null
+  let _abv = null
+  let _price = null
+  let _remaining = null
 
   function handleNewBeerFormSubmission(event){
-    event.preventDefault();
+    event.preventDefault()
+    _name.value = ''
+    _brewer.value = ''
+    _description.value = ''
+    _abv.value = ''
+    _price.value = ''
+    _remaining.value = ''
   }
 
   return (
@@ -23,32 +35,32 @@ function NewBeerForm(){
           type='text'
           id='name'
           placeholder= 'Beer Name'
-          ref={(input) => {_name = input;}}/><br/>
+          ref={(input) => {_name = input}}/><br/>
         <input
           type='text'
           id='brewer'
           placeholder='Brewer'
-          ref={(input) => {_brewer = input;}}/><br/>
+          ref={(input) => {_brewer = input}}/><br/>
         <input
           type='text'
           id='description'
           placeholder='Description'
-          ref={(input) => {_description = input;}}/><br/>
+          ref={(input) => {_description = input}}/><br/>
         <input
           type='text'
           id='abv'
           placeholder='ABV'
-          ref={(input) => {_abv = input;}}/><br/>
+          ref={(input) => {_abv = input}}/><br/>
         <input
           type='text'
           id='price'
           placeholder='Price'
-          ref={(input) => {_price = input;}}/><br/>
+          ref={(input) => {_price = input}}/><br/>
         <input
           type='text'
           id='remaining'
           placeholder='Remaining'
-          ref={(input) => {_remaining = input;}}/><br/>
+          ref={(input) => {_remaining = input}}/><br/>
         <button type='submit' class="btn btn-success">Add!</button>
       </form>
     </div>
