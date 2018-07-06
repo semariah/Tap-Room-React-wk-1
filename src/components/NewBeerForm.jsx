@@ -11,6 +11,7 @@ function NewBeerForm(props){
 
   function handleNewBeerFormSubmission(event){
     event.preventDefault()
+    props.onNewBeerCreation({name: _name.value, brewer: _brewer.value, description: _description.value, abv: _abv.value, price: _price.value, remaining: _remaining.value})
     _name.value = ''
     _brewer.value = ''
     _description.value = ''
@@ -70,7 +71,7 @@ function NewBeerForm(props){
 
 NewBeerForm.propTypes = {
   onNewBeerCreation: PropTypes.func
-};
+}
 
 
 export default NewBeerForm

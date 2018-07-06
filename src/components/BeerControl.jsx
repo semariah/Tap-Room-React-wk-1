@@ -35,7 +35,7 @@ class BeerControl extends React.Component {
 
 BeerControl.propTypes = {
   onNewBeerCreation: PropTypes.func
-};
+}
 
 
 export default BeerControl

@@ -10,13 +10,13 @@ class App extends React.Component {
     super(props)
     this.state = {
       masterBeerList: []
-    };
+    }
     this.handleAddingNewBeerToList = this.handleAddingNewBeerToList.bind(this)
   }
 
   handleAddingNewBeerToList(newBeer){
     var newMasterBeerList = this.state.masterBeerList.slice()
-    newMasterBeerList.push(newBeer);
+    newMasterBeerList.push(newBeer)
     this.setState({masterBeerList: newMasterBeerList})
   }
 
