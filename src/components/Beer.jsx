@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Moment from 'moment'
+
 
 function Beer(props){
   return (
@@ -24,11 +24,6 @@ function Beer(props){
     </div>
   )
 }
-
-function displayTimeOpen(timeOpen) {
-  return timeOpen.from(new Moment(), true);
-}
-
 
 Beer.propTypes = {
   name: PropTypes.string.isRequired,

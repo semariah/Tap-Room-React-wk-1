@@ -40,37 +40,37 @@ function NewBeerForm(props){
           id='name'
           placeholder= 'Beer Name'
           ref={(input) => {_name = input}}/>
-          <br/>
+        <br/>
         <input
           type='text'
           id='brewer'
           placeholder='Brewer'
           ref={(input) => {_brewer = input}}/>
-          <br/>
+        <br/>
         <input
           type='text'
           id='description'
           placeholder='Description'
           ref={(input) => {_description = input}}/>
-          <br/>
+        <br/>
         <input
           type='text'
           id='abv'
           placeholder='ABV'
           ref={(input) => {_abv = input}}/>
-          <br/>
+        <br/>
         <input
           type='text'
           id='price'
           placeholder='Price'
           ref={(input) => {_price = input}}/>
-          <br/>
+        <br/>
         <input
           type='text'
           id='remaining'
           placeholder='Remaining'
           ref={(input) => {_remaining = input}}/>
-          <br/>
+        <br/>
         <button type='submit' class="btn btn-success">Add!</button>
       </form>
     </div>
