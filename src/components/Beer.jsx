@@ -19,7 +19,7 @@ function Beer(props){
       <h5>Abv: {props.abv}</h5>
       <h5>Price: {props.price}</h5>
       <h5>Remaining: {props.remaining}</h5>
-      <h5>Bottled Day: {displayTimeOpen(props.timeOpen)} ago</h5>
+      <h5>Bottled Day: {props.formattedBottledTime} ago</h5>
       <hr/>
     </div>
   )
@@ -37,7 +37,7 @@ Beer.propTypes = {
   abv: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   remaining: PropTypes.string.isRequired,
-  timeOpen: PropTypes.instanceOf(Moment).isRequired
+  formattedBottledTime: PropTypes.string.isRequired
 
 
 }
