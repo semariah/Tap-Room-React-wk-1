@@ -7,7 +7,8 @@ function Admin(props){
   return (
     <div>
       <h2>Admin</h2>
-      <BeerList beerList={props.beerList} />
+      <BeerList beerList={props.beerList}
+        currentRouterPath={props.currentRouterPath} />
     </div>
   )
 }

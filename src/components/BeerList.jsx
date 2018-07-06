@@ -14,6 +14,7 @@ function BeerList(props){
           price={beer.price}
           remaining={beer.remaining}
           formattedBottledTime={beer.formattedBottledTime}
+          currentRouterPath={props.currentRouterPath}
           key={beer.id}/>
       )}
     </div>
@@ -21,7 +22,8 @@ function BeerList(props){
 }
 
 BeerList.propTypes = {
-  beerList: PropTypes.array
+  beerList: PropTypes.array,
+  currentRouterPath: PropTypes.string
 }
 
 
