@@ -6,6 +6,12 @@ import Error404 from './Error404'
 import BeerControl from './BeerControl'
 
 class App extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      masterBeerList: []
+    };
+  }
 
   render(){
     return(
