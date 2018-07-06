@@ -3,7 +3,6 @@ import Beer from './Beer'
 import PropTypes from 'prop-types'
 
 function BeerList(props){
-  console.log(props.beerList)
   return (
     <div>
       <hr/>
@@ -14,6 +13,7 @@ function BeerList(props){
           abv={beer.abv}
           price={beer.price}
           remaining={beer.remaining}
+          timeOpen={beer.timeOpen}
           key={beer.id}/>
       )}
     </div>

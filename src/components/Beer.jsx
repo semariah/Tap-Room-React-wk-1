@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Moment from 'moment'
 
 function Beer(props){
   return (
@@ -18,10 +19,16 @@ function Beer(props){
       <h5>Abv: {props.abv}</h5>
       <h5>Price: {props.price}</h5>
       <h5>Remaining: {props.remaining}</h5>
+      <h5>Bottled Day: {displayTimeOpen(props.timeOpen)} ago</h5>
       <hr/>
     </div>
   )
 }
+
+function displayTimeOpen(timeOpen) {
+  return timeOpen.from(new Moment(), true);
+}
+
 
 Beer.propTypes = {
   name: PropTypes.string.isRequired,
@@ -29,7 +36,8 @@ Beer.propTypes = {
   description: PropTypes.string.isRequired,
   abv: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  remaining: PropTypes.string.isRequired
+  remaining: PropTypes.string.isRequired,
+  timeOpen: PropTypes.instanceOf(Moment).isRequired
 
 
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
+import Moment from 'moment'
 
 function NewBeerForm(props){
   let _name = null
@@ -12,7 +13,7 @@ function NewBeerForm(props){
 
   function handleNewBeerFormSubmission(event){
     event.preventDefault()
-    props.onNewBeerCreation({name: _name.value, brewer: _brewer.value, description: _description.value, abv: _abv.value, price: _price.value, remaining: _remaining.value, id: v4()})
+    props.onNewBeerCreation({name: _name.value, brewer: _brewer.value, description: _description.value, abv: _abv.value, price: _price.value, remaining: _remaining.value, id: v4(), timeOpen: new Moment()})
     _name.value = ''
     _brewer.value = ''
     _description.value = ''
@@ -38,32 +39,38 @@ function NewBeerForm(props){
           type='text'
           id='name'
           placeholder= 'Beer Name'
-          ref={(input) => {_name = input}}/><br/>
+          ref={(input) => {_name = input}}/>
+          <br/>
         <input
           type='text'
           id='brewer'
           placeholder='Brewer'
-          ref={(input) => {_brewer = input}}/><br/>
+          ref={(input) => {_brewer = input}}/>
+          <br/>
         <input
           type='text'
           id='description'
           placeholder='Description'
-          ref={(input) => {_description = input}}/><br/>
+          ref={(input) => {_description = input}}/>
+          <br/>
         <input
           type='text'
           id='abv'
           placeholder='ABV'
-          ref={(input) => {_abv = input}}/><br/>
+          ref={(input) => {_abv = input}}/>
+          <br/>
         <input
           type='text'
           id='price'
           placeholder='Price'
-          ref={(input) => {_price = input}}/><br/>
+          ref={(input) => {_price = input}}/>
+          <br/>
         <input
           type='text'
           id='remaining'
           placeholder='Remaining'
-          ref={(input) => {_remaining = input}}/><br/>
+          ref={(input) => {_remaining = input}}/>
+          <br/>
         <button type='submit' class="btn btn-success">Add!</button>
       </form>
     </div>
