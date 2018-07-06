@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom'
 import Error404 from './Error404'
 import BeerControl from './BeerControl'
 import Moment from 'moment'
+import Admin from './Admin'
 
 
 class App extends React.Component {
@@ -55,6 +56,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' render={() => <BeerList beerList={this.state.masterBeerList}/> }/>
           <Route path='/newbeer' render={() => <BeerControl onNewBeerCreation={this.handleAddingNewBeerToList} />} />
+          <Route path='/admin' component={Admin} /> />
           <Route component={Error404} />
         </Switch>
       </div>
