@@ -32,7 +32,7 @@ Beer.propTypes = {
   abv: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   remaining: PropTypes.string.isRequired,
-  formattedBottledTime: PropTypes.string.isRequired
+  formattedBottledTime: PropTypes.string.isRequired,
   currentRouterPath: PropTypes.string
 
 

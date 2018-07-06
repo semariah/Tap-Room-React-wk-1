@@ -8,7 +8,7 @@ function Admin(props){
   return (
     <div>
       <h2>Admin</h2>
-        <BeerDetail />
+      <BeerDetail />
       <BeerList beerList={props.beerList}
         currentRouterPath={props.currentRouterPath} />
     </div>
