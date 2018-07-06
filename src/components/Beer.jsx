@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 
 function Beer(props){
-  return (
+  const beerInfo =
     <div>
       <style jsx>{`
         div {
@@ -22,7 +22,20 @@ function Beer(props){
       <h5>Bottled Day: {props.formattedBottledTime} ago</h5>
       <hr/>
     </div>
-  )
+  if (props.currentRouterPath === '/admin'){
+    return (
+      <div onClick={() => {alert('hey, you just clicked the beer ' + props.name);}}>
+        {beerInfo}
+      </div>
+    )
+  } else {
+    return (
+      <div>
+        {beerInfo}
+      </div>
+
+    )
+  }
 }
 
 Beer.propTypes = {
@@ -34,8 +47,6 @@ Beer.propTypes = {
   remaining: PropTypes.string.isRequired,
   formattedBottledTime: PropTypes.string.isRequired,
   currentRouterPath: PropTypes.string
-
-
 }
 
 export default Beer
