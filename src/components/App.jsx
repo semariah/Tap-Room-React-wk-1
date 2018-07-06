@@ -16,7 +16,14 @@ class App extends React.Component {
       selectedBeer: null
     }
     this.handleAddingNewBeerToList = this.handleAddingNewBeerToList.bind(this)
+    this.handleChangingSelectedBeer = this.handleChangingSelectedBeer.bind(this);
   }
+
+  handleChangingSelectedBeer(beer){
+  this.setState({selectedBeer: beer});
+  alert('The selected beer is: ' + this.state.selectedBeer.names);
+}
+
 
   handleAddingNewBeerToList(newBeer){
     var newMasterBeerList = this.state.masterBeerList.slice()
