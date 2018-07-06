@@ -1,6 +1,6 @@
 import React from 'react'
 import Beer from './Beer'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 function BeerList(props){
   return (
@@ -21,7 +21,7 @@ function BeerList(props){
 
 BeerList.propTypes = {
   beerList: PropTypes.array
-};
+}
 
 
 export default BeerList
