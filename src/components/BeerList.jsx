@@ -13,7 +13,7 @@ function BeerList(props){
           abv={beer.abv}
           price={beer.price}
           remaining={beer.remaining}
-          timeOpen={beer.timeOpen}
+          formattedBottledTime={beer.formattedBottledTime}
           key={beer.id}/>
       )}
     </div>

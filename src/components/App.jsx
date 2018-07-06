@@ -21,22 +21,22 @@ class App extends React.Component {
     this.setState({masterBeerList: newMasterBeerList})
   }
 
-  componentWillUnmount(){
-    clearInterval(this.waitTimeUpdateTimer);
-  }
-
   componentDidMount() {
     this.waitTimeUpdateTimer = setInterval(() =>
-      this.updateBeerElapsedWaitTime(),
+      this.updateBeerElapsedBottledTime(),
       5000
     );
+  }
+
+  componentWillUnmount(){
+    clearInterval(this.waitTimeUpdateTimer);
   }
 
   updateBeerElapsedWaitTime() {
     console.log("check");
     let newMasterBeerList = this.state.masterBeerList.slice();
     newMasterBeerList.forEach((beer) =>
-      beer.formattedWaitTime = (beer.timeOpen).fromNow(true)
+      beer.formattedBottledTime = (beer.timeOpen).fromNow(true)
     );
     this.setState({masterBeerList: newMasterBeerList})
   }
