@@ -1,6 +1,7 @@
 import React from 'react'
 import ConfirmationQuestions from './ConfirmationQuestions'
 import NewBeerForm from './NewBeerForm'
+import PropTypes from 'prop-types'
 
 
 class BeerControl extends React.Component {
@@ -31,5 +32,10 @@ class BeerControl extends React.Component {
     )
   }
 }
+
+BeerControl.propTypes = {
+  onNewBeerCreation: PropTypes.func
+};
+
 
 export default BeerControl
