@@ -1,5 +1,5 @@
 import React from 'react'
-import Body from './Body'
+import BeerList from './BeerList'
 import Header from './Header'
 import { Switch, Route } from 'react-router-dom'
 import NewBeerForm from './NewBeerForm'
@@ -15,7 +15,7 @@ function App(){
       `}</style>
       <Header/>
       <Switch>
-        <Route exact path='/' component={Body} />
+        <Route exact path='/' component={BeerList} />
         <Route path='/newbeer' component={NewBeerForm} />
         <Route component={Error404} />
       </Switch>

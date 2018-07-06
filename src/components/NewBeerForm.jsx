@@ -3,6 +3,16 @@ import React from 'react'
 function NewBeerForm(){
   return (
     <div>
+      <style jsx>{`
+      div {
+        background-image: url('http://static.shoplightspeed.com/shops/606770/files/005495006/547x396x1/cider.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 900%;
+        paddingBottom: '100px',
+      }
+    `}</style>
       <form>
         <input
           type='text'
