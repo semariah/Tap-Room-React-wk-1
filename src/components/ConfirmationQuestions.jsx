@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function ConfirmationQuestions(){
   return(
@@ -9,4 +10,8 @@ function ConfirmationQuestions(){
   )
 }
 
-export default ConfirmationQuestions;
+ConfirmationQuestions.propTypes = {
+  onTroubleshootingConfirmation: PropTypes.func
+}
+
+export default ConfirmationQuestions
