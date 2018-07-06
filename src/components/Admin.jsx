@@ -17,7 +17,8 @@ function Admin(props){
 
 Admin.propTypes = {
   beerList: PropTypes.array,
-  currentRouterPath: PropTypes.string.isRequired
+  currentRouterPath: PropTypes.string.isRequired,
+  onBeerSelection: PropTypes.func,isRequired
 }
 
 export default Admin
