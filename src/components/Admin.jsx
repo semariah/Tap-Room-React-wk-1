@@ -6,13 +6,13 @@ function Admin(props){
   return (
     <div>
       <h2>Admin</h2>
-        <BeerList beerList={props.beerList} />
+      <BeerList beerList={props.beerList} />
     </div>
-  );
+  )
 }
 
 Admin.propTypes = {
-  masterList: PropTypes.array
-};
+  beerList: PropTypes.array
+}
 
-export default Admin;
+export default Admin
