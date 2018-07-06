@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-function NewBeerForm(){
+function NewBeerForm(props){
   let _name = null
   let _brewer = null
   let _description = null
@@ -66,5 +67,10 @@ function NewBeerForm(){
     </div>
   )
 }
+
+NewBeerForm.propTypes = {
+  onNewBeerCreation: PropTypes.func
+};
+
 
 export default NewBeerForm
