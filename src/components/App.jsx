@@ -21,7 +21,7 @@ class App extends React.Component {
 
   handleChangingSelectedBeer(beer){
   this.setState({selectedBeer: beer});
-  alert('The selected beer is: ' + this.state.selectedBeer.names);
+  alert('The selected beer is: ' + this.state.selectedBeer.name);
 }
 
 

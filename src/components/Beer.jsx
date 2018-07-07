@@ -24,9 +24,9 @@ function Beer(props){
     </div>
   if (props.currentRouterPath === '/admin'){
     return (
-      <div onClick={() => {props.onBeerSelection({name: _name.value, brewer: _brewer.value, description: _description.value, abv: _abv.value, price: _price.value, remaining: _remaining.value, formattedBottledTime: props.formattedBottledTime});}}>
-        {beerInfo}
-      </div>
+      <div onClick={() => {props.onBeerSelection({name: props.name, brewer: props.brewer, description: props.description, abv: props.abv, price: props.price, remaining: props.remaining, formattedWaitTime: props.formattedWaitTime});}}>
+      {beerInfo}
+    </div>
     )
   } else {
     return (
@@ -46,7 +46,7 @@ Beer.propTypes = {
   price: PropTypes.string.isRequired,
   remaining: PropTypes.string.isRequired,
   formattedBottledTime: PropTypes.string.isRequired,
-  currentRouterPath: PropTypes.string
+  currentRouterPath: PropTypes.string,
   onBeerSelection: PropTypes.func
 }
 

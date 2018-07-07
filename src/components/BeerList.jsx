@@ -15,8 +15,9 @@ function BeerList(props){
           remaining={beer.remaining}
           formattedBottledTime={beer.formattedBottledTime}
           currentRouterPath={props.currentRouterPath}
-          key={beer.id}/>
-          onBeerSelection={props.onBeerSelection}
+          key={beer.id}
+          onBeerSelection={props.onBeerSelection}/>
+
       )}
     </div>
   )
