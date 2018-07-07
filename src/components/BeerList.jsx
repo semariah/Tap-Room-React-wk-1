@@ -16,6 +16,7 @@ function BeerList(props){
           formattedBottledTime={beer.formattedBottledTime}
           currentRouterPath={props.currentRouterPath}
           key={beer.id}/>
+          onBeerSelection={props.onBeerSelection}
       )}
     </div>
   )
@@ -23,7 +24,8 @@ function BeerList(props){
 
 BeerList.propTypes = {
   beerList: PropTypes.array,
-  currentRouterPath: PropTypes.string
+  currentRouterPath: PropTypes.string,
+  onBeerSelection: PropTypes.func
 }
 
 
